@@ -39,8 +39,8 @@ resizeButton.addEventListener('click', resizeBoard, {once:false});
 
 //event handler to reset drawing board
 function reset(e) {
-  var drawingBoard = document.querySelector('#drawing-board');
-   var pixels = document.querySelectorAll('.pixels')
+    var drawingBoard = document.querySelector('#drawing-board');
+   let pixels = document.querySelectorAll('.pixels')
    pixels.forEach(pixel => pixel.style.backgroundColor = 'white');
    document.body.style.backgroundColor = randomColor();
 }
@@ -75,6 +75,4 @@ function colourBoxes(e) {
         let randomCol = `rgb(${randomNumber(255)}, ${randomNumber(255)}, ${randomNumber(255)})`;
         return randomCol;
     }
-
-    //set background color for document body
     document.body.style.backgroundColor = 'plum';
